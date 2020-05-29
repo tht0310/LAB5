@@ -1,104 +1,192 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
-		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<script src="https://kit.fontawesome.com/af6f3d22ad.js" crossorigin="anonymous"></script>
-		<style type="text/css">
-			ul {
-				list-style-type: none
-				padding: 0px;
-				margin-bottom: 0px;
-			}
-			ul li {
-				display: inline-block;
-				padding: 10px;
-			}
-			i {
-				color: white;
-			}
-			.header {
-				background-color: #2D3D52;
-				color: white;
-			}
-			.class1 {
-				color: #96A1AD;
-			}
-			.class2 {
-				font-weight: bold;
-			}
-			.col-md-4 {
-				top: 10px;
-			}
-			.col-md-6 img {
-				width: 70%;
-				height: auto;
-			}
-			.class3 li input {
-				top: 200px;
-				padding-left: 20px;
-				width: 250px;
-				height: 40px;
-				background-image: url('https://img.icons8.com/pastel-glyph/2x/search--v2.png');
-				background-repeat: no-repeat;
-  				background-size: 30px auto;
-  				background-position: 200px;
-			}
-			.class3 {
-				padding-top: 0px;
-			}
-			.class3 li i {
-				 border-radius: 50%;
-				 border: 13px solid red; 
-				 background-color: red; 
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row header">
-				<div class="col-md-8">
-					<ul>
-						<li>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://kit.fontawesome.com/af6f3d22ad.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		body {
+			color: white;
+			font-size: 13px;
+			font-weight: bold;
+		}
+		.class1 {
+			font-weight: normal;
+			color: #586470;
+		}
+		.txt-center {
+			text-align: center;
+		}
+		.txt-right {
+			text-align: right;
+		}
+		.header {
+			width: 80%; margin: 0px auto;	
+		}
+		.wrapper1 {
+			background-color: #2D3E50; width: 97%; margin: 0px auto;	
+			padding: 10px 0px;	
+		}
+		.wrapper3 {
+			background-color: #652D8E; width: 97%; margin: 0px auto;	
+		}
+		.wrapper2 {
+			width: 80%; margin: 0px auto;	
+		}
+		.class2 {
+			padding: 30px 0px;
+		}
+		input {
+			border: 1px solid black;
+			width: 250px; 
+			height: 40px;	
+			padding-left: 15px;
+			background-image: url('https://img.icons8.com/pastel-glyph/2x/search--v2.png');
+			background-repeat: no-repeat;
+			background-size: 25px auto;
+			background-position: 210px;
+		}
+		.media i {
+			border-radius: 50%;
+			border: 13px solid red; 
+			background-color: red; 
+		}
+		.mt-0 {
+			margin: 0px;
+			padding-left: 10px;
+		}
+		.class2 .row .col-md-4 {
+			margin-top: 20px;
+		}
+		 .class2 .row .col-md-3 {
+		 	margin-top: 20px;
+		}
+		.search {
+			text-align: right;
+		}
+		.menu {
+			text-align: center;	 
+			padding: 0px;
+		}
+		.menu > li {
+			display: inline-block;
+			padding: 10px 20px;
+			position: relative;
+		}
+		a {
+			color: white;
+		}
+		a:hover{
+			color: white;
+			text-decoration: none;
+		}
+		.menu li:hover {
+			background-color: #773AA6;
+		}
+		.sub-menu li a:hover {
+			background-color: #652D8E;
+			color: white;
+		}
+		.sub-menu {
+			display: none;
+			position: absolute;
+			top: 39px;
+			left: 0px;
+			right: 0px;
+			padding: 0px;
+		}
+		.sub-menu li a {
+			display: block;
+			color: #652D8E;
+			background-color: white;
+			padding: 5px 0px;
+		}
+		.menu li:hover .sub-menu{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="wrapper1">
+			<div class="header">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 col-12 txt-center">
 							<i class="fas fa-phone"></i>
-							<span class="class1">Hotline: </span>
-							<span class="class2">0968 159 239 - 08.38 409 092</span>
-						</li>
-						<li>
+							<span class="class1">Hotline:</span>
+							<span>0968 159 239 - 08.38 409 092</span>
+						</div>
+						<div class="col-md-4 col-12 txt-center">
 							<i class="fas fa-map-marker-alt"></i>
-							<span class="class1">Địa chỉ: </span>
-							<span class="class2"> 01 Nguyễn Văn Cửu, Bình Thạnh, TP.HCM</span>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-4">
-					<span class="class2">Đăng nhập</span>
-					<span class="class1">hoặc</span>
-					<span class="class2">Tạo tài khoản mới</span>
+							<span class="class1">Địa chỉ: </span>  
+							<span>01 Nguyễn Cửu Văn, Bình Thạnh, TP.HCM 
+						</div>
+						<div class="col-md-4 col-12 txt-right">
+							<span>Đăng nhập </span>
+							<span class="class1">hoặc</span>
+							<span>Tạo tài khoản mới</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6">
-					<img src="VOW.png">
+		<div>
+			<div class="wrapper2">
+				<div class="container-fluid">
+					<div class="class2">
+						<div class="row">
+							<div class="col-md-5 col-12">
+								<img src="Logo.png">
+							</div>
+							<div class="col-md-4 col-12">
+								<div class="search">
+									<input type="text" name="" style="" placeholder="Tìm kiếm..">
+								</div>
+							</div>
+							<div class="col-md-3 col-12">
+								<div class="media">
+									<i class="fas fa-shopping-cart"></i>
+									<div class="media-body">
+										<p class="mt-0" style="color: black; font-weight: normal;">3 sản phẩm</p>
+										<p class="mt-0" style="color: red;">1,289,000đ</p>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
 				</div>
-				<div class="col-md-6">
-					<ul class="class3">
-						<li>
-							<input type="text" name="" style="" placeholder="Tìm kiếm..">	
-						</li>
-						<li>
-							<i class="fas fa-shopping-cart"></i>
-						</li>
-						<li class="class4">
-							<div>3 sản phẩm</div>
-							<span>1,289,000đ</span>
-						</li>
+			</div>	
+		</div>
+		<nav>
+		<div class="wrapper3">
+			<ul class="menu">
+				<li><a href="">TRANG CHỦ</a></li>
+				<li><a href="">HOA SINH NHẬT</a></li>
+				<li><a href="">HOA TÌNH YÊU</a></li>
+				<li><a href="">HOA CHÚC MỪNG</a></li>
+				<li><a href="">HOA VĂN PHÒNG</a></li>
+				<li><a href="">CHỦ ĐỀ</a></li>
+				<li>
+					<a href="">THIẾT KẾ</a>
+					<ul class="sub-menu">
+						<li><a href="">HOA CẢNH</a></li>
+						<li><a href="">HOA BÓ</a></li>
+						<li><a href="">HOA LẴNG</a></li>
+						<li><a href="">HOA GIỎ</a></li>
+						<li><a href="">HOA HỘP</a></li>
+						<li><a href="">HOA BÌNH</a></li>
+						<li><a href="">HOA KỆ</a></li>
+						<li><a href="">HOA CHẬU</a></li>
 					</ul>
-				</div>
-			</div>
-		</div>	
-	</body>
+				</li>
+				<li><a href="">THỂ LOẠI</a></li>
+				<li><a href="">QUÀ TẶNG</a></li>
+			</ul>
+		</div>
+		</nav>
+	</div>
+</body>
 </html>
